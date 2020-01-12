@@ -2,7 +2,9 @@ Thanks for taking a look!
 
 I wrote this kind of sporaticly with no real planning. Because of that, it's not the most well structured code. Also, I wrote this before I had any college coding classes under my belt, so I really just kind of winged it. 
 
-	Random Maze Generation: Uses a randomized version of Prim's algorithm to create a maze. The mazes have no loops (think spanning tree) and only one solution. Each maze starts at the only open space in the very top of the maze and ends at the only space in the very bottom of the maze. Maze is stored as a binary array where 1 = wall and 0 = corridor
+	Prim: Uses a randomized version of Prim's algorithm to create a maze. The mazes have no loops (think spanning tree) and only one solution. Each maze starts at the only open space in the very top of the maze and ends at the only space in the very bottom of the maze. Maze is stored as a binary array where 1 = wall and 0 = corridor
+	
+	Kruskal: Uses a randomized version of Kruskal's algorithm to create a maze. The mazes have the same format as described above ^.
 
 	FloodFill: The flood fill classes use a recursive algorithm to brute force the maze until it reaches the end point. The algorithm calls itself every time it reaches some sort of turn or intersection. At the end, the current "search thread" will terminate and the next one in the queue will go until it either hits a dead end or finds the end of the maze. FloodFill tends to have a bias toward going down.
 

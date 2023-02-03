@@ -1,7 +1,12 @@
 Thanks for taking a look!
 
 I wrote this kind of sporaticly with no real planning. Because of that, it's not the most well structured code. Also, I wrote
-this before I had any college coding classes under my belt, so I really just kind of winged it. 
+the bulk of this before I had any college coding classes under my belt, so I really just kind of winged it. 
+
+# Description:
+This is a maze generation and solving algorithm. It uses a randomized version of prims and kruskals algorithms to generate mazes. These mazes are then converted to graphs and solved using 1 of a bunch of graph search algorithms: 
+	Flood Fill: Basically a BFS search 
+	Flood Fill Always Toward End Point: BFS but it allways uses the point heading towards the end point. Revisiting this in my senior year, I've realized that I almost accidently invented the A* algorithm, so thats kinda fun. 
 
 	Prim: Uses a randomized version of Prim's algorithm to create a maze. The mazes have no loops (think
 	spanning tree) and only one solution. Each maze starts at the only open space in the very top of the
@@ -48,7 +53,7 @@ this before I had any college coding classes under my belt, so I really just kin
 
 Warnings: 
 
-	1. there are a good amount of Class and Methods which are unused. Those are all vestigial ideas 
+	1. there are a good amount of Classes and Methods which are unused. Those are all vestigial ideas 
 	which didn't work out, but I kept them anyway in case anything in them became useful later. 
 	RandomMaze and RandomMaze2 are my first attempts at generating mazes before actually researching 
 	any ways to do it. They  sort of work... ReadFiles turns an imported image of a maze to a binary

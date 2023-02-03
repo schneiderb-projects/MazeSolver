@@ -73,8 +73,8 @@ This is a maze generation and solving algorithm. It uses a randomized version of
  
 # Bugs: 
 
-	1. The insertion sort algorithm crashes sometimes and I'm not sure why. Since the merge sort is 
-	significantly faster and usually works (see Bug 2), I haven't taken the time to fix it. Because 
+	1. The insertion sort algorithm crashes sometimes and I'm not sure why. Probably just using to much stack space. Since the merge sort is 
+	significantly faster, I haven't taken the time to fix it. Because 
 	of that, when you "run all algorithms consecutively", the insertion sort version won't run, but you 
 	can run it in the graphing method menu.
 

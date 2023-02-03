@@ -4,9 +4,12 @@ I wrote this kind of sporaticly with no real planning. Because of that, it's not
 the bulk of this before I had any college coding classes under my belt, so I really just kind of winged it. 
 
 # Description:
-This is a maze generation and solving algorithm. It uses a randomized version of prims and kruskals algorithms to generate mazes. These mazes are then converted to graphs and solved using 1 of a bunch of graph search algorithms: 
-	Flood Fill: Basically a BFS search 
-	Flood Fill Always Toward End Point: BFS but it allways uses the point heading towards the end point. Revisiting this in my senior year, I've realized that I almost accidently invented the A* algorithm, so thats kinda fun. 
+This is a maze generation and solving algorithm. It uses a randomized version of prims and kruskals algorithms to generate mazes. These mazes are then solved using a series of search algorithms: 
+- Flood Fill: Basically just BFS search, but the maze isn't explicitly converted to a graph as later solution do. 
+- Flood Fill Always Toward End Point: Same as flood fill but it always processes the point closest to the end point next. Revisiting this in my senior year, I've realized that I almost accidently discovered the A* algorithm, so thats kinda fun.
+- ConvertMazeToGraph: Converts the maze to a graph with vertices at each intersection in the maze. That new graph is then BFS searched to find a solution. 
+- ScanTwice: Converts the maze to a graph as with ConvertMazeToGraph, but uses a faster technique to do so. That graph is BFS searched as well.
+
 
 	Prim: Uses a randomized version of Prim's algorithm to create a maze. The mazes have no loops (think
 	spanning tree) and only one solution. Each maze starts at the only open space in the very top of the

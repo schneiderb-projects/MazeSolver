@@ -56,7 +56,7 @@ This is a maze generation and solving algorithm. It uses a randomized version of
 	represented as white, and 2 represented as red. This image is then passed into a JFrame to be 
 	displayed.
 
-Warnings: 
+# Warnings: 
 
 	1. there are a good amount of Classes and Methods which are unused. Those are all vestigial ideas 
 	which didn't work out, but I kept them anyway in case anything in them became useful later. 
@@ -71,7 +71,7 @@ Warnings:
 	input a large number be ready to wait for a little while, and it still might not work (see Bugs). 
 	Prim is much better with this and tends not to run into stack overflow problems. 
  
-Bugs: 
+# Bugs: 
 
 	1. The insertion sort algorithm crashes sometimes and I'm not sure why. Since the merge sort is 
 	significantly faster and usually works (see Bug 2), I haven't taken the time to fix it. Because 

@@ -11,6 +11,8 @@ This is a maze generation and solving algorithm. It uses a randomized version of
 - ScanTwice: Converts the maze to a graph as with ConvertMazeToGraph, but uses a faster technique to do so. That graph is BFS searched as well.
 
 
+# In depth descriptions of what the useful classes do: 
+
 	Prim: Uses a randomized version of Prim's algorithm to create a maze. The mazes have no loops (think
 	spanning tree) and only one solution. Each maze starts at the only open space in the very top of the
 	maze and ends at the only space in the very bottom of the maze. Maze is stored as a binary array 
